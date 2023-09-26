@@ -25,5 +25,9 @@ import Leisure.views as leisure_views
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("", main_views.show_main),
+    path("", main_views.show_main, name = 'main'),
+    path("achievements/", achievements_views.show_achievements, name = 'achievements'),
+    path("education/", education_views.show_education, name = 'education'),
+    path("hobby/", hobby_views.show_hobby, name = 'hobby'),
+    path("leisure/", leisure_views.show_leisure, name = 'leisure')
 ]

@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}{% endblock %}</title>
+    <title>Document</title>
     {% block link %}
-
+    <link rel="stylesheet" href="{% static 'Main/css/style.css' %}">
     {% endblock %}
 
 </head>
@@ -14,19 +14,19 @@
     <header>
         
         <div class="main-page">
-            <a href=""><h1 id = "main-h1">Головна сторінка</h1></a>
+            <a href="{% url 'main' %}"><h1>Головна сторінка</h1></a>
         </div>
         <div class="leisure-page">
-
+            <a href="{% url 'leisure' %}"><h1>Дозвілля</h1></a>
         </div>
         <div class="hobby">
-
+            <a href="{% url 'hobby' %}"><h1>Хоббі</h1></a>
         </div>
         <div class="education-page">
-
+            <a href="{% url 'education' %}"><h1>Освіта</h1></a>
         </div>
         <div class="achievements-page">
-
+            <a href="{% url 'achievements' %}"><h1>Сторінка досягнень</h1></a>
         </div>
     </header>
     <main>
@@ -34,5 +34,8 @@
         
         {% endblock %}
     </main>
+    <footer>
+        <h1>Footer</h1>
+    </footer>
 </body>
 </html>
