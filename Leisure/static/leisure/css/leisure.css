@@ -1,0 +1,10 @@
+span{
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+    margin: 25px;
+    display: inline-block;
+}
+p{
+    color: red;
+}
