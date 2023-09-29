@@ -4,10 +4,42 @@
     <link rel="stylesheet" type="text/css" href="{% static 'Main/css/main.css' %}">
 {% endblock %}
 {% block content %}
+<style>
+    img{
+    margin: 20px;
+}
+
+.Ulyana{
+    width: 300px;
+    height: 300px;
+    background-color: green;
+}
+
+.Pasha{
+    width: 270px;
+    height: 300px;
+    background-color: red;
+}
+
+.Nazar{
+    width: 300px;
+    height: 300px;
+    background-color: blue;
+}
+
+.Danil{
+    width: 340px;
+    height: 300px;
+    background-color: yellow;
+}
+
+</style>
     <img class = Ulyana src="{% static 'Main/img/Ulyana.jpg' %}" alt="">
     <img class = Pasha src="{% static 'Main/img/Pasha.jpg' %}" alt="">
     <img class = Nazar src="{% static 'Main/img/Nazar.jpg' %}" alt="">
     <img class = Danil src="{% static 'Main/img/Danil.jpg' %}" alt="">
-    <p></p>
-    <p></p>
+    <p>Шамільова Уляна, 14 років</p>
+    <p>Устич Павло, 13</p>
+    <p>Назар Зозуля, 15</p>
+    <p>Кошнарьов Даніл, 16</p>
 {% endblock %}
